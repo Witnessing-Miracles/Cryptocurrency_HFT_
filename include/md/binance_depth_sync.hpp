@@ -23,7 +23,7 @@ inline auto find_snapshot_bridge(const std::vector<DepthEvent> & events, UpdateI
 
         // 事件范围覆盖了快照序号，这就是桥接事件
         if (event.first_update_id > last_update_id) {
-            return std::nullpot;
+            return std::nullopt;
         }
 
         // 事件覆盖了快照序号，返回它在缓存中的位置
